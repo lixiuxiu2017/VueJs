@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>DOM文本插值</title>
+        <!-- 引入vue，这样Vue就被声明为全局变量 -->
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+        <!-- 引入外部css文件 -->
+        <link href="index.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- 将vue实例的message属性绑定span元素的title特性 -->
+        <div id="app">
+            <span v-bind:title="message">鼠标悬停几秒钟查看此处动态绑定的提示信息！</span>
+        </div>
+        <!-- 引入的外部js文件必须放在页面最后，否则会报错 -->
+        <script src="index.js"></script>
+    </body>
+</html>

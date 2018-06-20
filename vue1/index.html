@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>DOM文本插值</title>
+        <!-- 引入vue，这样Vue就被声明为全局变量 -->
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+        <!-- 引入外部css文件 -->
+        <link href="index.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- 模板语法，将message变量值渲染进DOM -->
+        <div id="app">
+            {{ message }}
+        </div>
+        <!-- 引入的外部js文件必须放在页面最后，否则会报错 -->
+        <script src="index.js"></script>
+    </body>
+</html>
